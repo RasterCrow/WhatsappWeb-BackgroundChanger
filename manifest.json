@@ -1,0 +1,38 @@
+{
+    "name": "__MSG_appName__",
+    "default_locale": "en",
+    "version": "1.0",
+    "description": "__MSG_appDesc__",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "matches": [
+                "https://web.whatsapp.com/"
+            ],
+            "js": [
+                "libraries/jquery.js",
+                "libraries/arrive.js",
+                "setBackground.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "manifest_version": 2
+}

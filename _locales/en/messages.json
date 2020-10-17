@@ -1,0 +1,34 @@
+{
+    "appName": {
+        "message": "WhatsApp Web - Background Changer",
+        "description": "The title of the application, displayed in the web store."
+    },
+    "appDesc": {
+        "message": "Change the chat background on the WhatsApp Web Interface.",
+        "description": "The description of the application, displayed in the web store."
+    },
+    "tutorialText": {
+        "message": "Paste a link to an image to use as background, then reload the page. ( The URL must end with .jpeg, .png etc... ) ",
+        "description": "Text to show in the app."
+    },
+    "urlText": {
+        "message": "URL Image :",
+        "description": "text to show for url input field."
+    },
+    "setButton": {
+        "message": "Set as background",
+        "description": "text to show on set image button."
+    },
+    "resetButton": {
+        "message": "Reset background",
+        "description": "text to show on reset image button."
+    },
+    "errorAlert": {
+        "message": "URL not valid!",
+        "description": "text to show on error alert."
+    },
+    "successAlert": {
+        "message": "Success!",
+        "description": "text to show on success alert."
+    }
+}

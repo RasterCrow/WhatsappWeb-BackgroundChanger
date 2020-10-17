@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <style>
+      body {
+        width: 250px;
+        height: 330px;
+        scroll-behavior: smooth;
+        background: rgb(241, 241, 241);
+        padding: 10px 20px 10px 20px;
+        font-size: medium;
+        text-align: center;
+        font-family: "Mulish", sans-serif;
+      }
+      input,
+      textarea,
+      button {
+        font-family: inherit;
+      }
+      .dot {
+        position: fixed;
+        top: -53%;
+        right: 0%;
+        height: 320px;
+        width: 310px;
+        box-shadow: 0px 0px 20px 3px #2c2b2b;
+        background-color: rgba(98, 209, 83, 0.904);
+        z-index: -5;
+        border-radius: 20%;
+        display: inline-block;
+      }
+      #titoloPrincipale {
+        text-shadow: 2px 2px rgb(235, 99, 99);
+        margin-top: 0px;
+        color: white;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      #bodyText {
+        margin-top: 30px;
+      }
+      #urlForm {
+        display: flex;
+        flex-direction: column;
+      }
+      #buttonsLine {
+        margin-top: 0px;
+        padding: 15px;
+        display: flex;
+        gap: 5px;
+      }
+      button {
+        font-size: 0.9em;
+        padding: 5px;
+        color: black;
+        text-decoration: none;
+        background: transparent;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        transition: all 0.4s ease 0s;
+      }
+      button:hover {
+        cursor: pointer;
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 1);
+        transition: all 0.4s ease 0s;
+      }
+      button:active,
+      button:focus {
+        outline: none;
+      }
+      .fadein,
+      .fadeout {
+        opacity: 0;
+        -moz-transition: opacity 0.4s ease-in-out;
+        -o-transition: opacity 0.4s ease-in-out;
+        -webkit-transition: opacity 0.4s ease-in-out;
+        transition: opacity 0.4s ease-in-out;
+      }
+      .fadein {
+        opacity: 1;
+      }
+      #error-alert {
+        margin-top: 5px;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        width: 45%;
+        left: 28%;
+        position: fixed;
+        display: none;
+        background: rgba(219, 6, 6, 0.925);
+        color: black;
+        z-index: 2;
+      }
+      #success-alert {
+        margin-top: 5px;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        width: 45%;
+        left: 28%;
+        position: fixed;
+        display: none;
+        background: rgba(17, 187, 17, 0.863);
+        color: black;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="dot"></span>
+    <h2 id="titoloPrincipale"></h2>
+    <div id="error-alert" class="fadeout"><h3>URL not valid!</h3></div>
+    <div id="success-alert" class="fadeout"><h3>Success!</h3></div>
+    <div id="bodyText">
+      <div id="urlForm">
+        <p id="urlFormText"></p>
+        <p id="urlFormUrlText"></p>
+        <input
+          type="text"
+          id="bgImageUrl"
+          value="https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg"
+        /><br />
+      </div>
+      <div id="buttonsLine">
+        <button title="Set as Background" id="setBackground"></button>
+        <button title="Reset" id="resetBackground"></button>
+      </div>
+    </div>
+    <script src="libraries/jquery.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

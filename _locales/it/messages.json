@@ -1,0 +1,26 @@
+{
+    "appName": {
+        "message": "WhatsApp Web - Cambia Sfondo"
+    },
+    "appDesc": {
+        "message": "Cambia lo sfondo della chat sulla versione web di WhatsApp."
+    },
+    "tutorialText": {
+        "message": "Incolla il link di un'immagine per usarla come background, dopodichè ricarica la pagina. ( L'URL deve finire con .jpg, .png ecc.. )"
+    },
+    "urlText": {
+        "message": "URL immagine :"
+    },
+    "setButton": {
+        "message": "Imposta come sfondo"
+    },
+    "resetButton": {
+        "message": "Reset sfondo"
+    },
+    "errorAlert": {
+        "message": "URL non valido!"
+    },
+    "successAlert": {
+        "message": "Successo!"
+    }
+}
