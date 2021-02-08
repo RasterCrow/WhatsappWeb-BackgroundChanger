@@ -4,6 +4,8 @@
   <img height="400" src="https://i.imgur.com/Cev7tzX.png" />
 </p>
 
+You can download the Extension from the [Google Web Store](https://chrome.google.com/webstore/detail/whatsapp-web-background-c/inhinhfkmafbnibcooclidbjhagfoaoj?hl=it).
+
 Codice sorgente dell'estensione per Google Chrome / Microsoft Edge ( versione Chromium ) WhatsApp Web - Background Changer, che permette all'utente di cambiare lo sfondo default nelle chat della version web di WhatsApp.
 
 # How it works
