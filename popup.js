@@ -2,7 +2,7 @@
 
 //type 0 : error, 1:success
 function showAlert(type, hideAfter) {
-    console.log("show alert")
+    //console.log("show alert")
     if (type === 0) {
         $('#success-alert').hide();
         $('#error-alert').show();
@@ -52,7 +52,7 @@ setBackground.onclick = function (element) {
     let newBackground = document.getElementById("bgImageUrl").value
     if (checkURL(newBackground)) {
         chrome.storage.sync.set({ backgroundImage: newBackground }, function () {
-            console.log("image set to : " + newBackground)
+            //console.log("image set to : " + newBackground)
             showAlert(1, true)
         });
     } else {
@@ -67,10 +67,10 @@ setBackgroundImages.onclick = function (element) {
     //retrieve index of slideshow
     var slides = document.getElementsByClassName("mySlides");
     let newBackground = slides[slideIndex - 1].getElementsByTagName('img')[0].src;
-    console.log(newBackground)
+    //console.log(newBackground)
     if (checkURL(newBackground)) {
         chrome.storage.sync.set({ backgroundImage: newBackground }, function () {
-            console.log("This image was set as a background")
+            //console.log("This image was set as a background")
             showAlert(1, true)
         });
     } else {
@@ -83,7 +83,7 @@ setBackgroundImages.onclick = function (element) {
 let resetBackground = document.getElementById('resetBackground');
 resetBackground.onclick = function (element) {
     chrome.storage.sync.remove("backgroundImage", function () {
-        console.log("image reset")
+        //console.log("image reset")
         showAlert(1, true)
     });
 }
@@ -94,7 +94,7 @@ document.getElementById("prev").onclick = function (element) {
 }
 document.getElementById("next").onclick = function (element) {
     plusSlides(1)
-    console.log("next")
+    //console.log("next")
 }
 
 var slideIndex = 1;
