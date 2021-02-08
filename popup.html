@@ -21,19 +21,21 @@
       button {
         font-family: inherit;
       }
-      .dot {
+      .backgroundTitle {
         position: fixed;
-        top: -53%;
+        top: -35%;
         right: 0%;
         height: 320px;
         width: 310px;
         box-shadow: 0px 0px 20px 3px #2c2b2b;
-        background-color: rgba(98, 209, 83, 0.904);
-        z-index: -5;
+        background-color: rgba(98, 209, 83, 1);
+        z-index: 2;
         border-radius: 20%;
         display: inline-block;
       }
       #titoloPrincipale {
+        position: fixed;
+        z-index: 3;
         text-shadow: 2px 2px rgb(235, 99, 99);
         margin-top: 0px;
         color: white;
@@ -41,11 +43,16 @@
         text-align: center;
       }
       #bodyText {
-        margin-top: 30px;
+        margin-top: 100px;
+        padding-bottom: 10px;
       }
       #urlForm {
         display: flex;
+
         flex-direction: column;
+      }
+      #urlFormText {
+        margin-bottom: -5px;
       }
       #buttonsLine {
         margin-top: 0px;
@@ -55,7 +62,7 @@
       }
       button {
         font-size: 0.9em;
-        padding: 5px;
+        padding: 10px;
         color: black;
         text-decoration: none;
         background: transparent;
@@ -66,14 +73,23 @@
       button:hover {
         cursor: pointer;
         text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 1);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 1);
         transition: all 0.4s ease 0s;
       }
       button:active,
       button:focus {
         outline: none;
       }
+      #setBackgroundImages {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #resetBackground {
+        margin-bottom: 20px;
+        background-color: rgba(200, 6, 6, 0.625);
+      }
+
       .fadein,
       .fadeout {
         opacity: 0;
@@ -86,7 +102,8 @@
         opacity: 1;
       }
       #error-alert {
-        margin-top: 5px;
+        padding: 10px;
+        margin-top: 100px;
         border-radius: 20px;
         border: 1px solid rgba(0, 0, 0, 0.5);
         width: 45%;
@@ -98,38 +115,210 @@
         z-index: 2;
       }
       #success-alert {
-        margin-top: 5px;
+        padding: 10px;
+        margin-top: 100px;
         border-radius: 20px;
         border: 1px solid rgba(0, 0, 0, 0.5);
         width: 45%;
         left: 28%;
         position: fixed;
         display: none;
-        background: rgba(17, 187, 17, 0.863);
+        background: rgba(17, 187, 17, 0.963);
         color: black;
         z-index: 2;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        height: 180px;
+        max-width: auto;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Next & previous buttons */
+      .prev {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
       }
     </style>
   </head>
   <body>
-    <span class="dot"></span>
+    <span class="backgroundTitle"></span>
     <h2 id="titoloPrincipale"></h2>
-    <div id="error-alert" class="fadeout"><h3>URL not valid!</h3></div>
-    <div id="success-alert" class="fadeout"><h3>Success!</h3></div>
+    <div id="error-alert" class="fadeout"></div>
+    <div id="success-alert" class="fadeout"></div>
     <div id="bodyText">
       <div id="urlForm">
         <p id="urlFormText"></p>
-        <p id="urlFormUrlText"></p>
+        <h3 id="urlFormUrlText"></h3>
         <input
           type="text"
           id="bgImageUrl"
-          value="https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg"
+          placeholder="URL must end with .jpeg / .jpg / .png"
         /><br />
       </div>
-      <div id="buttonsLine">
-        <button title="Set as Background" id="setBackground"></button>
-        <button title="Reset" id="resetBackground"></button>
+
+      <button title="Set Link as Background" id="setBackground"></button>
+
+      <h3>Default images</h3>
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2020/06/15/15/34/fog-5302291_1280.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2020/10/21/09/49/beach-5672641_1280.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2021/01/13/16/49/winter-5914653_1280.jpg"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2020/06/02/01/33/sakura-5248955_1280.jpg"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014619_1280.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a id="prev" class="prev">&#10094;</a>
+        <a id="next" class="next">&#10095;</a>
       </div>
+
+      <button title="Use image as Background" id="setBackgroundImages"></button>
+
+      <button title="Reset" id="resetBackground"></button>
+      <a href="https://www.buymeacoffee.com/rastercrow" target="_blank">
+        <img src="./images/orange_img.webp" />
+      </a>
     </div>
     <script src="libraries/jquery.js"></script>
     <script src="popup.js"></script>

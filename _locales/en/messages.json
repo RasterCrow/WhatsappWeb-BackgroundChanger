@@ -8,7 +8,7 @@
         "description": "The description of the application, displayed in the web store."
     },
     "tutorialText": {
-        "message": "Paste a link to an image to use as background, then reload the page. ( The URL must end with .jpeg, .png etc... ) ",
+        "message": "Paste a link to an image to use as background, then reload the page.",
         "description": "Text to show in the app."
     },
     "urlText": {
@@ -16,8 +16,12 @@
         "description": "text to show for url input field."
     },
     "setButton": {
-        "message": "Set as background",
+        "message": "Set Link as background",
         "description": "text to show on set image button."
+    },
+    "setTemplateImagesButton": {
+        "message": "Use this image as background",
+        "description": "text to show on set image button from slideshow."
     },
     "resetButton": {
         "message": "Reset background",
@@ -28,7 +32,7 @@
         "description": "text to show on error alert."
     },
     "successAlert": {
-        "message": "Success!",
+        "message": "Success! Reload the page!",
         "description": "text to show on success alert."
     }
 }

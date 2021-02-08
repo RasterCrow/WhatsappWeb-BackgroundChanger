@@ -6,13 +6,16 @@
         "message": "Cambia lo sfondo della chat sulla versione web di WhatsApp."
     },
     "tutorialText": {
-        "message": "Incolla il link di un'immagine per usarla come background, dopodichè ricarica la pagina. ( L'URL deve finire con .jpg, .png ecc.. )"
+        "message": "Incolla il link di un'immagine per usarla come background, dopodichè ricarica la pagina."
     },
     "urlText": {
         "message": "URL immagine :"
     },
     "setButton": {
-        "message": "Imposta come sfondo"
+        "message": "Imposta link come sfondo"
+    },
+    "setTemplateImagesButton": {
+        "message": "Usa questa immagine come sfondo"
     },
     "resetButton": {
         "message": "Reset sfondo"
@@ -21,6 +24,6 @@
         "message": "URL non valido!"
     },
     "successAlert": {
-        "message": "Successo!"
+        "message": "Successo! Ricarica la pagina!"
     }
 }
