@@ -5,7 +5,8 @@
   <img height="400" src="https://i.imgur.com/moR5Vyx.png" />
 </p>
 
-You can download the Extension from the [Google Web Store](https://chrome.google.com/webstore/detail/whatsapp-web-background-c/inhinhfkmafbnibcooclidbjhagfoaoj) and on the [Firefox Add-Ons](https://addons.mozilla.org/it/firefox/addon/whatsapp-web-background-change/).
+~~You can download the Extension from the [Google Web Store](https://chrome.google.com/webstore/detail/whatsapp-web-background-c/inhinhfkmafbnibcooclidbjhagfoaoj) and on the [Firefox Add-Ons](https://addons.mozilla.org/it/firefox/addon/whatsapp-web-background-change/).~~
+The extension is no longer available on the stores for copyright reasons. You can still download it and use it from this repository.
 
 Source code of WhatsApp Web - Background Changer, available for Google Chrome / Microsoft Edge ( Chromium version ) and Firefox, that lets you change the background image of the chats from the web versione of WhatsApp.
 
